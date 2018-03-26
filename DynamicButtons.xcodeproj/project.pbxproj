@@ -14,6 +14,7 @@
 		D914CD72206808970079E523 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D914CD70206808970079E523 /* LaunchScreen.storyboard */; };
 		D914CD7D206808970079E523 /* DynamicButtonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D914CD7C206808970079E523 /* DynamicButtonsTests.swift */; };
 		D9EA6CCF206825AD008A0B5B /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA6CCE206825AD008A0B5B /* FilterViewController.swift */; };
+		D9EA6CD120687DA2008A0B5B /* CategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA6CD020687DA2008A0B5B /* CategoryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		D914CD7C206808970079E523 /* DynamicButtonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicButtonsTests.swift; sourceTree = "<group>"; };
 		D914CD7E206808970079E523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9EA6CCE206825AD008A0B5B /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		D9EA6CD020687DA2008A0B5B /* CategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				D914CD67206808970079E523 /* AppDelegate.swift */,
 				D914CD69206808970079E523 /* ViewController.swift */,
 				D914CD6B206808970079E523 /* Main.storyboard */,
+				D9EA6CD020687DA2008A0B5B /* CategoryButton.swift */,
 				D9EA6CCE206825AD008A0B5B /* FilterViewController.swift */,
 				D914CD6E206808970079E523 /* Assets.xcassets */,
 				D914CD70206808970079E523 /* LaunchScreen.storyboard */,
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9EA6CCF206825AD008A0B5B /* FilterViewController.swift in Sources */,
+				D9EA6CD120687DA2008A0B5B /* CategoryButton.swift in Sources */,
 				D914CD6A206808970079E523 /* ViewController.swift in Sources */,
 				D914CD68206808970079E523 /* AppDelegate.swift in Sources */,
 			);

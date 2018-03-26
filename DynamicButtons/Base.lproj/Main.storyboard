@@ -96,37 +96,49 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="La5-MG-ZAw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="La5-MG-ZAw" customClass="CategoryButton" customModule="DynamicButtons" customModuleProvider="target">
                                 <rect key="frame" x="16" y="73" width="119" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="119" id="SBl-T7-tUK"/>
                                 </constraints>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Abandoned" image="abandoned"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="category" value="abandoned"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="abandonBtn:" destination="C5O-uB-JnH" eventType="touchUpInside" id="plH-7n-ddb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfY-Mb-5gH">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfY-Mb-5gH" customClass="CategoryButton" customModule="DynamicButtons" customModuleProvider="target">
                                 <rect key="frame" x="16" y="106" width="119" height="25"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Cave" image="cave"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="category" value="cave"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="caveBtn:" destination="C5O-uB-JnH" eventType="touchUpInside" id="vIe-sX-81K"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CW2-6m-e4u">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CW2-6m-e4u" customClass="CategoryButton" customModule="DynamicButtons" customModuleProvider="target">
                                 <rect key="frame" x="16" y="139" width="119" height="25"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Desert" image="desert"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="category" value="desert"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="desertBtn:" destination="C5O-uB-JnH" eventType="touchUpInside" id="HW4-XY-Jlj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh0-Sn-jd8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh0-Sn-jd8" customClass="CategoryButton" customModule="DynamicButtons" customModuleProvider="target">
                                 <rect key="frame" x="16" y="172" width="119" height="25"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Forest" image="forest"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="category" value="forest"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="forestBtn:" destination="C5O-uB-JnH" eventType="touchUpInside" id="Ygs-1x-DPV"/>
                                 </connections>

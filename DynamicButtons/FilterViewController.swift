@@ -16,11 +16,11 @@ class FilterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Find all buttons in the scene and add them to the category status dictionary
-        let myViews = view.subviews.filter{$0 is UIButton}
+        // Find all category buttons in the scene and add them to the category status dictionary
+        let myViews = view.subviews.filter{$0 is CategoryButton}
         for view in myViews {
-            if let button = view as? UIButton {
-                categoriesStatus[(button.titleLabel?.text)!] = false
+            if let button = view as? CategoryButton {
+                categoriesStatus[button.category] = false
             }
         }
         print("Button Count:", myViews.count)
@@ -56,17 +56,16 @@ class FilterViewController: UIViewController {
     
     // Toggle the tint color of the button
     func toggleButton (_ sender: Any) {
-        if let button = sender as? UIButton {
-            let btnTitle = button.titleLabel?.text
+        if let button = sender as? CategoryButton {
             
             // If the button is ON toggle it OFF and set color to gray
-            if categoriesStatus[btnTitle!]! {
+            if categoriesStatus[button.category]! {
                 button.tintColor = .gray
-                categoriesStatus[btnTitle!]! = !categoriesStatus[btnTitle!]!
+                categoriesStatus[button.category] = !categoriesStatus[button.category]!
             } else {
             // If the button is OFF toggle it ON and set color to green
                 button.tintColor = .green
-                categoriesStatus[btnTitle!]! = !categoriesStatus[btnTitle!]!
+                categoriesStatus[button.category] = !categoriesStatus[button.category]!
             }
         }
     }
@@ -76,9 +75,9 @@ class FilterViewController: UIViewController {
         for category in categoriesStatus.keys {
             categoriesStatus[category] = true
         }
-        let myViews = view.subviews.filter{$0 is UIButton}
+        let myViews = view.subviews.filter{$0 is CategoryButton}
         for view in myViews {
-            if let button = view as? UIButton {
+            if let button = view as? CategoryButton {
                 button.tintColor = .green
             }
         }
@@ -89,9 +88,9 @@ class FilterViewController: UIViewController {
         for category in categoriesStatus.keys {
             categoriesStatus[category] = false
         }
-        let myViews = view.subviews.filter{$0 is UIButton}
+        let myViews = view.subviews.filter{$0 is CategoryButton}
         for view in myViews {
-            if let button = view as? UIButton {
+            if let button = view as? CategoryButton {
                 button.tintColor = .gray
             }
         }
